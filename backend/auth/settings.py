@@ -57,6 +57,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
 ]
 
+AUTH_USER_MODEL = 'users.customUser'
 
 ROOT_URLCONF = 'auth.urls'
 
