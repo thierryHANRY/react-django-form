@@ -22,7 +22,7 @@ import { useNavigate } from 'react-router-dom'
         })
         .then((Response) => {
             console.log(Response)
-            localStorage.setItem('token', Response.data.token)
+            localStorage.setItem('Token', Response.data.token)
             navigate('/home')
         })
         .catch((error) => {

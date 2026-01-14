@@ -6,6 +6,7 @@ import Home from './components/Home.jsx'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
 import About from './components/About.jsx'
+import ProtectedRoute from './components/ProtectedRoutes.jsx'
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
         <Navbar
         content={
           <Routes>
-            <Route>
+            <Route element={<ProtectedRoute/>}>
               <Route path='/home' element={<Home/>}/>
               <Route path='/about' element={<About/>}/>
             </Route>
