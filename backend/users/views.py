@@ -8,6 +8,7 @@ from knox.models import AuthToken
 
 
 User = get_user_model()
+  
 
 # Create your views here.
 
